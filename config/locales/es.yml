@@ -1,0 +1,6 @@
+es:
+  spree:
+    sort_by: 'Ordenar por:'
+    newest: 'Los más nuevos'
+    lowest_price: 'Los más baratos'
+    highest_price: 'Los más caros'

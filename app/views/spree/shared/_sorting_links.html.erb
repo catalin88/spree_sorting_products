@@ -1,0 +1,12 @@
+<% if products.any? && params[:controller] == 'spree/products' %>
+    <div class="row sorting">
+        <div class="col-sm-6 col-sm-offset-6">
+              <%= Spree.t(:sort_by) %>
+              <ul class="list-inline">
+                <li><%= link_to_unless current_sorting?(:ascend_by_updated_at), Spree.t(:newest), params.merge(sorting: :ascend_by_updated_at) %></li>
+                <li><%= link_to_unless current_sorting?(:ascend_by_master_price), Spree.t(:lowest_price), params.merge(sorting: :ascend_by_master_price) %></li>
+                <li><%= link_to_unless current_sorting?(:descend_by_master_price), Spree.t(:highest_price), params.merge(sorting: :descend_by_master_price) %></li>
+              </ul>
+        </div>
+    </div>
+<% end %>

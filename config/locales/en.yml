@@ -1,0 +1,6 @@
+en:
+  spree:
+    sort_by: 'Order by:'
+    newest: 'Newest'
+    lowest_price: 'Lowest price'
+    highest_price: 'Highest price'
