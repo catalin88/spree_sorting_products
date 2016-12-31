@@ -11,7 +11,7 @@ module Spree
       old_show # Like calling super: http://stackoverflow.com/a/13806783/73673
 
       # Remove default `:in_taxon` `ORDER_BY` & apply sorting scope if `sorting` param is present
-      @products = @products.reorder('').send(sorting_scope) if params[:sorting].present?
+      @products = @products.select('spree_products.*, spree_prices.amount').reorder('').send(sorting_scope) if params[:sorting].present?
     end
 
     def sorting_param
