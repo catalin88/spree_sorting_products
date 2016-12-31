@@ -1,5 +1,4 @@
 Spree::ProductsController.class_eval do
-
   helper_method :sorting_param
   alias_method :old_index, :index
 
@@ -26,6 +25,4 @@ Spree::ProductsController.class_eval do
     #Spree::Product.search_scopes # We could use all the sortings available in the Spree scopes.
     [:descend_by_master_price, :ascend_by_master_price, :ascend_by_updated_at]
   end
-
-
 end
