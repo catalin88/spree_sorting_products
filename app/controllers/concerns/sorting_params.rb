@@ -16,7 +16,7 @@ module SortingParams
     end
 
     def default_sorting
-      :ascend_by_updated_at
+      :descend_by_updated_at
     end
 
     def allowed_sortings
