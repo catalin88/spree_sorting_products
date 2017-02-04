@@ -20,6 +20,6 @@ module SortingParams
     end
 
     def allowed_sortings
-      [:descend_by_master_price, :ascend_by_master_price, :ascend_by_updated_at]
+      [:descend_by_master_price, :ascend_by_master_price, :descend_by_updated_at]
     end
 end
